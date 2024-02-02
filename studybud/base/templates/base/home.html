@@ -13,9 +13,7 @@
   <div>
     <a href="{% url 'create_room' %}">+ Create Room</a>
     <p>{{rooms_count}} rooms found</p>
-    {% for room in rooms %}
     <div>{% include "rooms_feed.html" %}</div>
-    {% endfor %}
   </div>
 
   <div>{% include "activities.html" %}</div>

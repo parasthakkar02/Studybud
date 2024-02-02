@@ -17,7 +17,7 @@
     <div>
       {% if request.user.is_authenticated %}
       <a href="{% url 'logout' %}">Logout</a>
-      <p>Hello {{user.username|title}}!</p>
+      <p>Hello {{request.user|title}}!</p>
       {% else %}
       <a href="{% url 'login' %}">Login</a>
       {% endif %}

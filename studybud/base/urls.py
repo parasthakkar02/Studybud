@@ -8,11 +8,11 @@ urlpatterns = [
     # main urls
     path("", views.home, name="home"),
     path("room/<str:pk>/", views.room, name="room"),
-    path("profile/<str:pk>/", views.userProfile, name="user_profile"),
+    path("profile/<str:pk>/", views.userProfile, name="user-profile"),
     # for room
-    path("create_room/", views.createRoom, name="create_room"),
-    path("update_room/<str:pk>/", views.updateRoom, name="update_room"),
-    path("delete_room/<str:pk>/", views.deleteRoom, name="delete_room"),
+    path("create-room/", views.createRoom, name="create-room"),
+    path("update-room/<str:pk>/", views.updateRoom, name="update-room"),
+    path("delete-room/<str:pk>/", views.deleteRoom, name="delete-room"),
     # for message
-    path("delete_message/<str:pk>/", views.deleteMessage, name="delete_message"),
+    path("delete-message/<str:pk>/", views.deleteMessage, name="delete-message"),
 ]

@@ -16,4 +16,7 @@ urlpatterns = [
     path("delete-room/<str:pk>/", views.deleteRoom, name="delete-room"),
     # for message
     path("delete-message/<str:pk>/", views.deleteMessage, name="delete-message"),
+    # for responsive
+    path("topics/", views.topicsPage, name="topics"),
+    path("activities/", views.activityPage, name="activities"),
 ]
